@@ -1,0 +1,13 @@
+# name
+# createdAt
+
+type Resolution {
+    _id: String!
+    name: String!
+}
+
+type Mutation {
+    createResolution(name: String!): Resolution
+    deleteResolution(id: String!): String
+    # updateResolution(id: String!): Boolean
+}
